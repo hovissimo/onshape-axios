@@ -11,7 +11,7 @@ You can create OAUTH credentials at https://dev-portal.onshape.com/keys
 # Usage
 ```js
 // Using ES modules
-import {OnshapeClient} from './lib/Onshape/Onshape.js'
+import {OnshapeClient} from 'onshape-axios'
 
 // Enter your own credentials
 const credentials = {
