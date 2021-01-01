@@ -1,0 +1,24 @@
+{
+  "name": "onshape-axios",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "hovissimo@github.com",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "mocha **/*.spec.js",
+    "watch": "mocha --watch --parallel **/*.spec.js",
+    "coverage": "c8 yarn test"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "c8": "^7.3.5",
+    "chai": "^4.2.0",
+    "chai-match": "^1.1.1",
+    "mocha": "^8.2.1",
+    "sinon": "^9.2.2",
+    "sinon-chai": "^3.5.0"
+  }
+}
