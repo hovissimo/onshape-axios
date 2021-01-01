@@ -1,21 +1,29 @@
 {
   "author": "npm@bunkercode.com",
   "description": "Axios-based client for the Onshape REST API",
-  "engines": { "node": ">=12.20.0" },
+  "engines": {
+    "node": ">=12.20.0"
+  },
   "homepage": "https://github.com/hovissimo/onshape-axios",
-  "keywords": ["onshape", "axios", "client"],
+  "keywords": [
+    "onshape",
+    "axios",
+    "client"
+  ],
   "license": "MIT",
-  "main": "Onshape.js",
   "main": "main.js",
   "name": "onshape-axios",
-  "repository": { "type": "git", "url": "github:hovissimo/onshape-axios" },
+  "repository": {
+    "type": "git",
+    "url": "github:hovissimo/onshape-axios"
+  },
   "scripts": {
     "test": "mocha **/*.spec.js",
     "watch": "mocha --watch --parallel **/*.spec.js",
     "coverage": "c8 yarn test"
   },
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "dependencies": {
     "axios": "^0.21.1"
   },
