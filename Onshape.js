@@ -7,6 +7,7 @@ import querystring from 'querystring'
 import * as errors from './errors.js'
 
 import {getParts} from './getParts.js'
+import {sketchInformation} from './sketchInformation.js'
 
 export class OnshapeClient {
   constructor({accessKey, baseUrl, secretKey}) {
@@ -145,3 +146,4 @@ const sampleArray = arr => arr[Math.floor(Math.random()*arr.length)]
 
 // Attach all of the endpoint specific methods
 OnshapeClient.prototype.getParts = getParts;
+OnshapeClient.prototype.sketchInformation = sketchInformation;
