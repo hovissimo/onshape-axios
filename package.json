@@ -23,7 +23,7 @@
     "coverage": "c8 yarn test"
   },
   "type": "module",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "dependencies": {
     "axios": "^0.21.1"
   },
