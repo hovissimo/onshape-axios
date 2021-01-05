@@ -88,6 +88,9 @@ export class OnshapeClient {
   buildQueryString(query) {
     if (typeof(query) == 'undefined') { return '' }
     if (typeof(query) != 'object') { throw new errors.InvalidQueryError }
+
+    // remove undefined properties
+    Object.keys(query).forEach(key => query[key] === undefined && delete query[key])
     return querystring.stringify(query)
   }
 

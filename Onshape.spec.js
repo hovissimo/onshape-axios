@@ -133,6 +133,10 @@ describe("Onshape client", function() {
       expect(client.buildQueryString({a: 5, b: [6,7]})).to.equal('a=5&b=6&b=7')
       expect(client.buildQueryString({'7': false})).to.equal('7=false')
     });
+
+    it("omits undefined keys", function() {
+      expect(client.buildQueryString({a: undefined, b: 5})).to.equal('b=5')
+    });
   });
 
   describe("buildDWMVEPath", function() {
